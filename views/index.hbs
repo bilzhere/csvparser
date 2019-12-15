@@ -1,0 +1,40 @@
+<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h3 class="card-title">CSB PARSER</h3>
+			
+				<div class="card card border-danger text-center">
+					<div class="card-header">
+						DATABASE SETUP
+					</div>
+					
+					<div class="card-body">
+						  <form ref='uploadForm' id='uploadForm' action='upload' method='post' encType="multipart/form-data">
+						  <div class="form-row">
+							<div class="form-group col-md-6">
+							  <label for="inputEmail4">Connection URL</label>
+							  <input type="text" name="connection" class="form-control" id="inputEmail4" placeholder="DB Connection URL">
+							</div>
+							<div class="form-group col-md-3">
+							  <label for="inputPassword4">DB User</label>
+							  <input type="text" name="user" class="form-control" id="inputPassword4" placeholder="DB User">
+							</div>
+							<div class="form-group col-md-3">
+							  <label for="inputPassword4">DB Password</label>
+							  <input type="text" name="password" class="form-control" id="inputPassword4" placeholder="DB Password">
+							</div>
+						  </div>
+						 <div class="custom-file">
+						  <input type="file" class="custom-file-input" id="customFileLang" name="myFile" lang="en" accept=".csv">
+						  <label class="custom-file-label" for="customFileLang">CSB FILE CHOOSE</label>
+						</div> 
+						</form>
+					</div>
+					<div class="card-footer text-muted">
+						<button type="button" class="btn btn-outline-danger" id="upload_to_database">UPLOAD TO DATABASE</button>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
